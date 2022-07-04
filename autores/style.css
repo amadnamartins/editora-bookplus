@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 75%;
+  }
+
+  body {
+    background-color: #fff;
+    color: #fff;
+  }
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%);    
+}
+
+header .logo {
+    color: #fff;
+    text-decoration: none;
+    width: 25rem
+}
+
+header .navigation {
+    position: relative;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #fff;
+    font-size: medium;
+    font-weight: 100;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    margin-bottom: -15%;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+}
+
+  .container {
+    position: relative;
+    overflow: hidden;
+  }
+
+.main-container{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 5rem;
+}
+
+.line{
+  display: flex;
+  position: relative;
+  height: 10px;
+  background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.background-animation h1{
+  text-align: center;
+  font-family: 'Croissant One', cursive;
+  font-size: 2rem;
+}
+
+.background-animation > p{
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  color: #454545;
+  text-align: justify;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  padding: 30px;
+  margin: 20px;
+ font-size: 1.3em;
+}
+
+.main-text{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    color: #454545;
+    text-align: justify;
+    justify-content: space-around;
+}
+
+.valores::before{
+  content: "valores";
+  position: absolute;
+  margin: -3.5rem;
+  font-family: 'Croissant One', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.valores{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    color: #454545;
+    text-align: justify;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.valores h1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Croissant One', cursive;
+}
+  
+footer{
+    width: 100%;
+    height: 5vh;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-text{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    font-size: 11px;
+    padding-left: 50px;
+    padding-right: 200px;
+    color: white;
+}
+
+.footer-text::before{
+  content: "</ACM>";
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 5px;
+  font-size: 15px;
+  padding-right: 200px;
+  opacity: 0.7;
+  color: white;
+}
+
+.font-awesome{
+    color: #fff;
+    font-size: medium;
+    margin-right: 20px;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.5;
+}
+
+.font-awesome:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 1499px) {
+  .main-container{
+    width: auto;
+    height: auto;
+}
+}
+
+
+@media (max-width: 1040px) {
+
+  .logo{
+    position: absolute;
+    left: 43%;
+  }
+    header{
+        padding: 12px 20px;
+      }
+    
+      header .navigation{
+        display: none;
+      }
+    
+      header .navigation.active{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+      }
+    
+      header .navigation .navigation-items a{
+        color: #222;
+        font-size: 1.5em;
+        margin: 20px;
+      }
+    
+      header .navigation .navigation-items a:before{
+        background: #fff;
+        height: 5px;
+      }
+    
+      header .navigation.active .navigation-items{
+        background: rgba(255, 255, 255, 0.788);
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+      }
+    
+      .menu-btn{
+        background: url(img/menu.png) no-repeat;
+        z-index: 888;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s ease;
+      }
+    
+      .menu-btn.active{
+        z-index: 999;
+        background: url(img/close.png) no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease-in-out;
+      }
+
+      .main-text{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        color: #454545;
+        text-align: justify;
+        justify-content: space-around;
+    }
+
+      .valores{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .background-animation > p{
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      color: #454545;
+      text-align: justify;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      padding: 30px;
+      margin: 20px;
+     font-size: 1.3em;
+    }
+
+    .footer-text{
+      padding-left: 50px;
+      padding-right: 50px;
+      color: white;
+  }
+  
+  .footer-text::before{
+    content: "</ACM>";
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 50px;
+    color: white;
+  }
+  
+  .font-awesome{
+      font-size: small;
+      margin-right: 10px;
+  }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      body {
+        padding: 0;
+      }
+
+      .navigation-items{
+        font-size: 1.3vh;
+        display: flex;
+      }
+
+      .container {
+        border-radius: 0;
+      }
+    }
+  
+    @media only screen and (max-width: 800px) {
+      html {
+        font-size: 57%;
+      }
+
+      header .logo {
+        color: #fff;
+        text-decoration: none;
+        width: 30rem
+    }
+
+    .main-container{
+        font-size: 1.3rem;    
+      }
+
+  }
+
+    @media only screen and (max-width: 650px) {
+      header .logo {
+        color: #fff;
+        text-decoration: none;
+        width: 30rem
+    }
+
+    .main-text{
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+      .valores{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+  
+  .footer-text{
+      padding-left: 20px;
+      padding-right: 25px;
+      color: white;
+  }
+  
+  .footer-text::before{
+    content: "</ACM>";
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    font-size: 10px;
+    font-weight: 600;
+    padding-right: 25px;
+    color: white;
+  }
+  
+  .font-awesome{
+      font-size: small;
+      margin-right: 2px;
+  }
+}
