@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -54,7 +53,7 @@ header {
 header .logo {
     color: #fff;
     text-decoration: none;
-    width: 25rem
+    transform: scale(0.5);
 }
 
 header .navigation {
@@ -100,7 +99,8 @@ header .navigation .navigation-items a:hover:before {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin-top: 5rem;
+    margin: 5rem;
+    padding: auto;
 }
 
 .line{
@@ -127,6 +127,12 @@ header .navigation .navigation-items a:hover:before {
     margin-right: 2vh;
 }
 
+.background-animation{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .background-animation h1{
   text-align: center;
   font-family: 'Croissant One', cursive;
@@ -138,11 +144,16 @@ header .navigation .navigation-items a:hover:before {
   display: flex;
   color: #454545;
   text-align: justify;
+  align-items: center;
   background-color: #f9f9f9;
   border-radius: 4px;
   padding: 30px;
   margin: 20px;
  font-size: 1.3em;
+}
+
+.background-animation > svg{
+  padding-right: 20px;
 }
 
 .main-text{
@@ -154,31 +165,40 @@ header .navigation .navigation-items a:hover:before {
     justify-content: space-around;
 }
 
-.valores::before{
-  content: "valores";
-  position: absolute;
-  margin: -3.5rem;
-  font-family: 'Croissant One', cursive;
-  font-size: 2rem;
-  font-weight: 600;
-}
 
-.valores{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    color: #454545;
-    text-align: justify;
-    justify-content: space-around;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
-
-.valores h1{
+.button{
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-family: 'Croissant One', cursive;
+  align-items: center;
+  justify-content:space-around;
+  width: 40%;
+  background: linear-gradient(
+        125deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 30%;
+    transition: all 0.7s ease-in-out;
+}
+
+.button:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.button > svg{
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
   
 footer{
@@ -240,7 +260,7 @@ footer{
 @media (max-width: 1499px) {
   .main-container{
     width: auto;
-    height: auto;
+    height: 100vh;
 }
 }
 
@@ -249,7 +269,8 @@ footer{
 
   .logo{
     position: absolute;
-    left: 43%;
+    left: 40%;
+    top: 0;
   }
     header{
         padding: 12px 20px;
@@ -296,6 +317,7 @@ footer{
       }
     
       .menu-btn{
+        position: absolute;
         background: url(img/menu.png) no-repeat;
         z-index: 888;
         background-size: 30px;
@@ -384,10 +406,9 @@ footer{
       }
 
       header .logo {
-        color: #fff;
-        text-decoration: none;
-        width: 30rem
-    }
+        position: absolute;
+        left: 30%;
+      }
 
     .main-container{
         font-size: 1.3rem;    
@@ -433,6 +454,6 @@ footer{
   
   .font-awesome{
       font-size: small;
-      margin-right: 2px;
+      margin-right: 5px;
   }
 }

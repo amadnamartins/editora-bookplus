@@ -52,9 +52,9 @@ header {
 }
 
 header .logo {
-    color: #fff;
-    text-decoration: none;
-    width: 25rem
+  color: #fff;
+  text-decoration: none;
+  transform: scale(0.5);
 }
 
 header .navigation {
@@ -249,8 +249,10 @@ footer{
 
   .logo{
     position: absolute;
-    left: 43%;
+    left: 40%;
+    top: 0;
   }
+
     header{
         padding: 12px 20px;
       }
@@ -296,6 +298,7 @@ footer{
       }
     
       .menu-btn{
+        position: absolute;
         background: url(img/menu.png) no-repeat;
         z-index: 888;
         background-size: 30px;
@@ -383,11 +386,10 @@ footer{
         font-size: 57%;
       }
 
-      header .logo {
-        color: #fff;
-        text-decoration: none;
-        width: 30rem
-    }
+       .logo{
+        position: absolute;
+        left: 30%;
+      }
 
     .main-container{
         font-size: 1.3rem;    
@@ -396,11 +398,10 @@ footer{
   }
 
     @media only screen and (max-width: 650px) {
-      header .logo {
-        color: #fff;
-        text-decoration: none;
-        width: 30rem
-    }
+      .logo{
+        position: absolute;
+        left: 25vw;
+      }
 
     .main-text{
       width: 80%;
